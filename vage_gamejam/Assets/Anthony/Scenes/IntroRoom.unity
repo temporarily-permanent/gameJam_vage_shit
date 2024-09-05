@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+  - component: {fileID: 18257321}
 --- !u!1001 &27522862
 PrefabInstance:
   m_ObjectHideFlags: 0
