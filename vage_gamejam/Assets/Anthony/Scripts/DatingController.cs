@@ -15,9 +15,9 @@ public class DatingController : MonoBehaviour
     [SerializeField] GameObject secondbutton;
     [SerializeField] GameObject goodButton;
     [SerializeField] GameObject badButton;
+    [SerializeField] GameObject resetButton;
     [SerializeField] Sprite[] images;
     [SerializeField] Image currentImg;
-    [SerializeField] Scene nextScene;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +27,7 @@ public class DatingController : MonoBehaviour
         HideAllButtons();
         currentDialog.text = text[0];
         currentImg.sprite = images[0];
+        beginbutton.SetActive(true);
     }
 
     void HideAllButtons()
@@ -35,6 +36,7 @@ public class DatingController : MonoBehaviour
         secondbutton.SetActive(false);
         badButton.SetActive(false);
         goodButton.SetActive(false);
+        resetButton.SetActive(false);
     }
 
     public void SecondScene()
@@ -44,7 +46,8 @@ public class DatingController : MonoBehaviour
         HideAllButtons();
         secondbutton.SetActive(true);
     }
-    public void ThirdScene()
+
+    public void ThirdScene() 
     {
         currentImg.sprite = images[2];
         currentDialog.text = text[2];
@@ -52,8 +55,19 @@ public class DatingController : MonoBehaviour
         badButton.SetActive(true);
         goodButton.SetActive(true);
     }
-    public void FourthScene()
+    public void GoodScene()
     {
-        SceneManager.LoadScene(nextScene.ToString());
+        currentImg.sprite = images[3];
+        currentDialog.text = text[3];
+        HideAllButtons();
+        resetButton.SetActive(true);
+    }
+    public void BadScene()
+    {
+        SceneManager.LoadScene("vliegendeBoot");
+    }
+    public void ResetGame()
+    {
+        SceneManager.LoadScene("IntroRoom");
     }
 }
