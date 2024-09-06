@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip clip4; //boost2
     [SerializeField] private AudioClip clip;  //death
 
+    [SerializeField] private int max = 9000;
     [SerializeField] private double speed;
     private int rott;
     void Start()
@@ -95,7 +96,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if (speed > 9000)
+        if (speed > max)
         {
             au.PlayOneShot(clip3);
             canvas.enabled = true;
