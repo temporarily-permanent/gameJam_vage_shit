@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/vliegendeBoot.unity
+    path: Assets/Anthony/Scenes/IntroRoom.unity
+    guid: 95e081767dbb5e54e817fb0ca618ed03
+  - enabled: 1
+    path: Assets/Cat/Scenes/vliegendeBoot.unity
     guid: 1114e81228dcd8e45803a3427cecd3b1
   - enabled: 1
-    path: Assets/Scenes/End.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Anthony/Scenes/DatingSim.unity
+    guid: eedb1790dd9e35141aba26a9ce640128
   m_configObjects: {}

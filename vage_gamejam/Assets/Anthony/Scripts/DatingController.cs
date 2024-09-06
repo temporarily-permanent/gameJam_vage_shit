@@ -18,6 +18,8 @@ public class DatingController : MonoBehaviour
     [SerializeField] GameObject resetButton;
     [SerializeField] Sprite[] images;
     [SerializeField] Image currentImg;
+    [SerializeField] Scene nextScene;
+    [SerializeField] Scene beginScene;
 
     // Start is called before the first frame update
     void Start()

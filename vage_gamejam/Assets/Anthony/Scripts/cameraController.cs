@@ -8,7 +8,6 @@ public class cameraController : MonoBehaviour
 {
     public GameObject cam1;
     public GameObject StartButton;
-    public Scene NextScene;
     // Start is called before the first frame update
     private void Start()
     {
@@ -18,6 +17,13 @@ public class cameraController : MonoBehaviour
     {
         cam1.SetActive(false);
         StartButton.SetActive(false);
-        SceneManager.LoadScene(NextScene.ToString());
+        StartCoroutine(nextScene());
+    }
+
+    IEnumerator nextScene()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("DatingSim");
+
     }
 }
