@@ -69,10 +69,9 @@ public class movement : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
-        if (transform.position.y < -5)
+        if (transform.position.y < -100)
         {
-            SceneManager.LoadScene(1);
-
+            SceneManager.LoadScene("IntroRoom");
         }
     }
 }

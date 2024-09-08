@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Anthony/Scenes/DatingSim.unity
     guid: eedb1790dd9e35141aba26a9ce640128
+  - enabled: 1
+    path: Assets/Ties/Scenes/bestegame.unity
+    guid: 8a32fb2b28dafc14a8ca4342ab2c0483
+  - enabled: 1
+    path: Assets/Cat/Scenes/End.unity
+    guid: d76b37059c6a9b84aacd93f3384dc9db
   m_configObjects: {}

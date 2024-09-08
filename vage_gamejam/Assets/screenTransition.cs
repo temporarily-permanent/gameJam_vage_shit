@@ -14,6 +14,6 @@ public class screenTransition : MonoBehaviour
     {
         yield return new WaitForSeconds(8f);
         Debug.Log("load next scene");
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("bestegame");
     }
 }
